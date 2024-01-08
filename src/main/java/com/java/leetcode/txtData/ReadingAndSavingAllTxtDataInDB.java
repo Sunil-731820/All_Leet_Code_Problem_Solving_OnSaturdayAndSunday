@@ -24,7 +24,7 @@ public class ReadingAndSavingAllTxtDataInDB {
             while ((line = reader.readLine()) != null) {
             	System.out.println("Insdide the while Loop ");
             	System.out.println(line);
-                String[] parts = line.split(" "); // Splitting the line by comma to extract individual values
+                String[] parts = line.split(" "); // Splitting the line by SPace to extract individual values
                 System.out.println(parts.toString());
                 String id = parts[0].trim();
                 String firstName = parts[1].trim();
@@ -39,7 +39,9 @@ public class ReadingAndSavingAllTxtDataInDB {
                 statement.setString(4, endDate);
                 statement.executeUpdate();
                 statement.close();
+                System.out.println("The Size Of The Array is : ="+parts.length);
             }
+            
             System.out.println("Data from text file saved into the database successfully!");
 
         } catch (IOException | SQLException e) {
