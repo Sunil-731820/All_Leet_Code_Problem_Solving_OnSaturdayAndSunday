@@ -43,6 +43,28 @@
     </dependencyManagement>
 
     <dependencies>
+	<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.27</version> <!-- Use the latest version available -->
+</dependency>
+
+
+    <!-- Apache POI for Excel -->
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi</artifactId>
+        <version>5.2.3</version> <!-- Or the latest version available -->
+    </dependency>
+
+    <!-- For reading Excel files in XLS format -->
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>5.2.3</version> <!-- Or the latest version available -->
+    </dependency>
+
+
         <dependency>
             <groupId>org.glassfish.jersey.containers</groupId>
             <artifactId>jersey-container-servlet-core</artifactId>
