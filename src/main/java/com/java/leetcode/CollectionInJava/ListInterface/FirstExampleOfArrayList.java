@@ -37,6 +37,9 @@ public class FirstExampleOfArrayList {
 //		Checking The ELement is There in Array List or Not using COntain Method : 
 		System.out.println("CHecking the Data is There In Array List or Not : "+ listOfInteger.contains(200));
 		
+//		Use Of The SOrt Method : 
+		System.out.println("After Sorting The data is : ");
+//		System.out.println(listOfInteger.sort(null));
 
 	}
 
