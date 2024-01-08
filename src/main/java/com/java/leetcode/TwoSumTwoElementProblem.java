@@ -11,6 +11,7 @@ public class TwoSumTwoElementProblem {
 		while(left<right) {
 			int sum = number[left] + number[right];
 			if(sum==target) {
+				System.out.println("The left And Right is : "+left + " "+right);
 				return new int[] {left+1,right+1}; 
 			}
 			else if(sum<target) {
