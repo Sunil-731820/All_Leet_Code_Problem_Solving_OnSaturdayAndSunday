@@ -7,7 +7,7 @@ public class DateBeginDateAndEndDate {
 
     public static void main(String[] args) {
         String beginDateStr = "2023-01-15";
-        String endDateStr = "2023-02-10";
+        String endDateStr = "2025-02-10";
         String date1 = "";
 
         // Define a date format matching your string representation
