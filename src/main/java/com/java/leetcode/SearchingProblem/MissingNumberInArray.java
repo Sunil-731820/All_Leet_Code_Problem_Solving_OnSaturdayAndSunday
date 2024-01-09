@@ -1,35 +1,31 @@
 package com.java.leetcode.SearchingProblem;
 
-import java.util.Scanner;
+import java.util.Scanner;import jakarta.validation.constraints.Size;
 
 public class MissingNumberInArray {
 	
-	 public static void findMissing(int arr[], int N)
-	    {
-	        int i;
-	        int temp[] = new int[N + 1];
-	        for (i = 0; i <= N; i++) {
-	            temp[i] = 0;
-	        }
-	 
-	        for (i = 0; i < N; i++) {
-	            temp[arr[i] - 1] = 1;
-	        }
-	 
-	        int ans = 0;
-	        for (i = 0; i <= N; i++) {
-	            if (temp[i] == 0)
-	                ans = i + 1;
-	        }
-	        System.out.println(ans);
-	    }
+	public static int  findMissingNumber(int[] arr , int N) {
+		int sum =0;
+		for(int i=0;i<N;i++) {
+			sum +=arr[i];
+		}
+		
+		return ((N*(N+1))/2-sum);
+	}
 	
 	public static void main(String[] args) {
-		int arr[] = {1, 3, 7, 5, 6, 2 };
-        int n = arr.length;
- 
-        // Function call
-        findMissing(arr, n);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("ENter The Size of The Array : ");
+		int size = sc.nextInt();
+		int[] arrNumber = new int[size];
+		for(int i=0;i<size;i++) {
+			System.out.println("Enter ELement ");
+			arrNumber[i] = sc.nextInt();
+		}
+		
+		int MissingNumber = findMissingNumber(arrNumber, size);
+		System.out.println("The Missing Number is : "+MissingNumber);
+		
 		
 	}
 
