@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<script> 
+
+	// Using Literals  
+emp={id:102,name:"Shyam Kumar",salary:40000}  
+document.write(emp.id+" "+emp.name+" "+emp.salary);  
+
+
+// CrreateingThe Instance of the Objects 
+var emp=new Object();  
+emp.id=101;  
+emp.name="Ravi Malik";  
+emp.salary=50000;  
+document.write(emp.id+" "+emp.name+" "+emp.salary);  
+
+// Using function Constructor : 
+	function emp(id,name,salary){  
+this.id=id;  
+this.name=name;  
+this.salary=salary;  
+}  
+e=new emp(103,"Vimal Jaiswal",30000);  
+  
+document.writeln(e.id+" "+e.name+" "+e.salary);
+
+</script>
+
+</body>
+</html>
