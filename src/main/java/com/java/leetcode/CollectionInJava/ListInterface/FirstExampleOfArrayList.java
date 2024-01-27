@@ -11,6 +11,7 @@ public class FirstExampleOfArrayList {
 		listOfInteger.add(100);
 		listOfInteger.add(200);
 		listOfInteger.add(300);
+		
 		System.out.println("The List is : ");
 		System.out.println(listOfInteger);
 		
